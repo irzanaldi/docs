@@ -1,0 +1,29 @@
+# ===== Secrets: NEVER commit real environment files =====
+.env
+**/.env
+.env.*
+**/.env.*
+# Keep example/sample templates
+!.env.example
+!**/.env.example
+!.env.sample
+!**/.env.sample
+
+# ===== Dependencies =====
+vendor/
+**/vendor/
+node_modules/
+**/node_modules/
+
+# ===== Keys / certificates =====
+storage/*.key
+**/storage/*.key
+*.pem
+*.key
+
+# ===== OS / editor / logs / build output =====
+.DS_Store
+**/.DS_Store
+*.log
+build/
+dist/
